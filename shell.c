@@ -41,7 +41,7 @@ int main(int ac, char *av[])
 		write(1, "$ ", 2);
 	while ((read = getline(&line, &len, stdin)) != -1)
 	{
-		if(read == -1)
+		if (read == -1)
 		{
 			perror("geline");
 			free(line), line = NULL;
